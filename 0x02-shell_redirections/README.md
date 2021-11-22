@@ -1,0 +1,1 @@
+Si ya usó los PTO asignados para un trimestre, pero usa 1 más, ¿qué porcentaje se deducirá de su puntaje profesional.

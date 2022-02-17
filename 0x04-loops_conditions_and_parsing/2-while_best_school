@@ -5,5 +5,5 @@ counter=1
 while [ $counter -le 10 ]
 do
     echo "Holberton School"
-    i=$((counter++))
+    counter=$((counter++))
 done

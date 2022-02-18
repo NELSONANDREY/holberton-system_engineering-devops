@@ -1,18 +1,21 @@
 #!/usr/bin/env bash
 # Fizzbuzz
 
-for i in {1..100}
+counter=1
+
+while [ $counter -lt 101 ];
 do
-    if [ $(( i%15 )) -eq 0 ]
+    if [ $((counter%15)) = 0 ];
     then
-        echo "Fizzbuzz"
-    elif [ $(( i%5 )) -eq 0 ]
+        echo "FizzBuzz"
+    elif [ $((counter%5)) = 0 ];
     then
         echo "Buzz"
-    elif [ $(( i%3 )) -eq 0 ]
+    elif [ $((counter%3)) = 0 ];
     then
         echo "Fizz"
     else
-        echo "$i"
+        echo "$counter"
     fi
+    counter=$((counter + 1))
 done

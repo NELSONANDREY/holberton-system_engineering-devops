@@ -41,7 +41,7 @@ frontend www-https
 	default_backend http_back
 backend http_back
 	balance roundrobin
-	redirect scheme https if !{ ssl_fc }	
+	redirect scheme https if !{ ssl_fc }
 	server host_1 35.243.142.184:80
 	server host_2 54.196.133.140:80
 backend letsencrypt-backend
